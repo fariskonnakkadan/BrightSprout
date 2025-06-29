@@ -1,6 +1,6 @@
 # 🌱 Brightsprout
 
-Brightsprout is an Android TV and mobile-compatible educational app that dynamically generates subject-wise learning modules using the Gemini API by Google. It provides a clean, scalable, and intuitive interface for students from **Class 1 to 12**, and supports **dynamic topic/subtopic expansion**, **interactive tiles**, and **streamlined Gemini model integration**.
+Brightsprout is an Android TV and mobile-compatible educational app that dynamically generates subject-wise learning modules using the Gemini API by Google. It provides a clean, scalable, and intuitive interface for students from **Class 1 to 12**, and also supports most **undergraduate and postgraduate degree courses**.
 
 ---
 
@@ -22,7 +22,7 @@ Brightsprout is an Android TV and mobile-compatible educational app that dynamic
 - **Subject Screen** – Lists subjects for selected class
 - **Topic Screen** – Lists topics under the subject
 - **Subtopic Screen** – Fetches content for the selected topic from Gemini
-- **Settings Screen** – Lets user manage API keys, choose a Gemini model (e.g., `gemini-pro`, `gemini-1.5-flash`)
+- **Settings Screen** – Lets user manage API keys, choose a Gemini model (e.g., `gemini-2.0-flash-lite`, `gemini-1.5-flash`)
 
 ---
 
@@ -86,7 +86,7 @@ Brightsprout is an Android TV and mobile-compatible educational app that dynamic
 
 | Task                          | Recommendation                          |
 |-------------------------------|------------------------------------------|
-| API Model                     | `gemini-1.5-flash-latest` (fast + cheap) |
+| API Model                     | `gemini-2.0-flash-lite` (fast + cheap) |
 | API Key Storage               | Done in-app via Settings screen          |
 | UI Performance                | Avoid fixed heights, allow wrap_content  |
 | Android TV Compatibility      | All screens keyboard/focus-aware         |
