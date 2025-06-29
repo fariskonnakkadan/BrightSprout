@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#333333"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            />
+        <!-- API Key Tile -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#121212"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:elevation="6dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Saved API Key"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/key_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white" />
+
+            <!-- New: API Key Label -->
+            <EditText
+                android:id="@+id/api_key_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter API Key Name (label)"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:backgroundTint="@android:color/white"
+                android:layout_marginTop="16dp" />
+
+            <!-- New: API Key Value -->
+            <EditText
+                android:id="@+id/api_key_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter API Key"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:backgroundTint="@android:color/white"
+                android:layout_marginTop="12dp" />
+
+            <!-- Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/add_key_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#4CAF50" />
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/delete_key_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#9E9E9E" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Model Selection Tile -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#121212"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="6dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gemini Model"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/model_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white" />
+
+            <Button
+                android:id="@+id/save_model_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Save Model"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#607D8B" />
+
+            <Button
+                android:id="@+id/test_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Test API Key"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#455A64" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <style name="AppTheme" parent="Theme.Leanback">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+    <string name="app_name">BrightSprout</string>
+</resources>
